@@ -2,9 +2,27 @@
  * YOUR CODE HERE *
  ******************/
 
+function slice (str, num1, num2){
+  
+if (num1 === undefined && num2 === undefined){
 
+  return str
+}
+if (num1 >=0){
 
+  
+  for(let i=num1; i> str.length; i++){
+const lettersOfTheStringInTheArray=str[i]  
+}  
+}
+return lettersOfTheStringInTheArray;
 
+}
+
+function repeat (str, num){
+
+  return str
+}
 
 
 /*********************************
