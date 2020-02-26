@@ -3,26 +3,45 @@
  ******************/
 
 function slice (str, num1, num2){
+  let finalString=''
   
 if (num1 === undefined && num2 === undefined){
 
   return str
 }
-if (num1 >=0){
+if (num1>=0 && num2 === undefined){
 
-  
-  for(let i=num1; i> str.length; i++){
-const lettersOfTheStringInTheArray=str[i]  
-}  
-}
-return lettersOfTheStringInTheArray;
+  for(let i=num1; i< str.length; i++){
+    finalString += str[i]
+  } 
 
+  return finalString
 }
 
+if(num1!== undefined && num2!== undefined){
+  for(let i=num1; i< num2; i++){
+    finalString += str[i]
+}
+return finalString
+}
+}
 function repeat (str, num){
 
-  return str
+let output = ''
+
+if (str &&num>=0){
+
+while (num>0){
+
+  output+=str;
+  num--;
 }
+}
+return output 
+}
+
+
+
 
 
 /*********************************
